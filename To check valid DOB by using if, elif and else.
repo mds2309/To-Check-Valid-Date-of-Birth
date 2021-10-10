@@ -1,0 +1,245 @@
+# To check whether the given DOB is correct
+
+dob = input("Enter your date of birth in DDMMYYYY format : ")
+a = len(dob)
+if a == 8:
+    dd = dob[0:2]
+    mm = dob[2:4]
+    yyyy = dob[4:9]
+    if dob.isnumeric():
+        d = int(dd)
+        m = int(mm)
+        y = int(yyyy)
+        print (d)
+        print (m)
+        print (y)
+        if y > 1900 and y <= 2021:
+            if y < 2021:
+                if (y % 100) == 0 and (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 100) == 0 and not (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 4) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                else:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+            elif y == 2021 and m > 9:
+                print ("The date is in future")
+            elif y == 2021 and m < 9:
+                if (y % 100) == 0 and (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 100) == 0 and not (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 4) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                else:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+            elif y == 2021 and m == 9 and d > 20:
+                print ("The date is in future")
+            elif y == 2021 and m == 9 and d <= 20:
+                if (y % 100) == 0 and (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 100) == 0 and not (y % 400) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                elif (y % 4) == 0:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 29:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+                else:
+                    if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+                        if 0 < d <= 31:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 4 or m == 6 or m == 9 or m == 11:
+                        if 0 < d <= 30:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    elif m == 2:
+                        if 0 < d <= 28:
+                            print ("DOB is valid")
+                        else:
+                            print ("DOB is not valid")
+                    else:
+                        print ("Not a valid DOB")
+        else:
+            print ("DOB is not valid !!! ")
+    else:
+        print("Enter valid Date of Birth in DD:MM:YYYY format...!!")
+else:
+    print("Enter valid Date of Birth in DD:MM:YYYY format...!!")
