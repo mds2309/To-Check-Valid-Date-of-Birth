@@ -1,5 +1,3 @@
-# To check whether the given DOB is correct
-
 dob = input("Enter your date of birth in DDMMYYYY format : ")
 a = len(dob)
 if a == 8:
